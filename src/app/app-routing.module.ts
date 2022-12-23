@@ -1,10 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { StoriaCaffeComponent } from './components/storia-caffe/storia-caffe.component';
+import { StoriaEventsComponent } from './components/storia-events/storia-events.component';
+import { StoriaItaliaComponent } from './components/storia-italia/storia-italia.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'aboutus', component: AboutUsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'storiaitalia', component: StoriaItaliaComponent },
+  { path: 'storiacaffe', component: StoriaCaffeComponent },
+  { path: 'storiaevents', component: StoriaEventsComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
