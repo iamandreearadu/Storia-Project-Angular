@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { StoriaCaffeComponent } from './components/storia-caffe/storia-caffe.component';
 import { StoriaEventsComponent } from './components/storia-events/storia-events.component';
 import { StoriaItaliaComponent } from './components/storia-italia/storia-italia.component';
+import { EventsComponent } from './components/events/events.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'storiaitalia', component: StoriaItaliaComponent },
   { path: 'storiacaffe', component: StoriaCaffeComponent },
   { path: 'storiaevents', component: StoriaEventsComponent },
+  { path: 'events', component: EventsComponent },
 ];
 
 @NgModule({
