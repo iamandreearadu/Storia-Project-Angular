@@ -31,6 +31,10 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { MyButtonComponent } from './shared/my-button/my-button.component';
 import { ModalEventComponent } from './components/modal-event/modal-event.component';
+import { LoginComponent } from './components/login/login.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { AuthService } from './components/Services/auth.service';
+import { GuardService } from './components/Services/guard.service';
 
 @NgModule({
   declarations: [
@@ -55,6 +59,8 @@ import { ModalEventComponent } from './components/modal-event/modal-event.compon
     MyButtonComponent,
     NavbarComponent,
     ModalEventComponent,
+    LoginComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

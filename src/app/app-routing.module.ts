@@ -7,6 +7,9 @@ import { StoriaCaffeComponent } from './components/storia-caffe/storia-caffe.com
 import { StoriaEventsComponent } from './components/storia-events/storia-events.component';
 import { StoriaItaliaComponent } from './components/storia-italia/storia-italia.component';
 import { EventsComponent } from './components/events/events.component';
+import { LoginComponent } from './components/login/login.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { GuardService } from './components/Services/guard.service';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,7 +19,9 @@ const routes: Routes = [
   { path: 'storiaitalia', component: StoriaItaliaComponent },
   { path: 'storiacaffe', component: StoriaCaffeComponent },
   { path: 'storiaevents', component: StoriaEventsComponent },
-  { path: 'events', component: EventsComponent },
+  { path: 'events', component: EventsComponent, canActivate: [GuardService] },
+  { path: 'login', component: LoginComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
