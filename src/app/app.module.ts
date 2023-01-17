@@ -33,8 +33,7 @@ import { MyButtonComponent } from './shared/my-button/my-button.component';
 import { ModalEventComponent } from './components/modal-event/modal-event.component';
 import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { AuthService } from './components/Services/auth.service';
-import { GuardService } from './components/Services/guard.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -73,6 +72,7 @@ import { GuardService } from './components/Services/guard.service';
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
     FontAwesomeModule,
+    TranslateModule.forRoot({ defaultLanguage: 'en' }),
   ],
   providers: [],
   bootstrap: [AppComponent],
